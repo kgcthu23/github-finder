@@ -7,11 +7,7 @@ function UserResults() {
   const [isLoading, setIsLoading] = useState(true)
 
   const fetchUsers = async () => {
-    const res = await fetch(`https://api.github.com/users`, {
-      headers: {
-        Authorization: `token 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`,
-      },
-    })
+    const res = await fetch(`https://api.github.com/users`)
     const data = await res.json()
     setUsers(data)
     setIsLoading(false)
