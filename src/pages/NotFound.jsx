@@ -10,7 +10,7 @@ function NotFound() {
           <p className='text-5xl mb-8'>404 - Page not Found!</p>
           <Link to='/' className='btn btn-primary btn-lg'>
             <FaHome className='mr-2' />
-            Back To Home
+            Back To Home {process.env.GITHUB_URL}
           </Link>
         </div>
       </div>

@@ -20,7 +20,6 @@ function App() {
         </main>
         <Footer />
       </div>
-      Routes
     </Router>
   )
 }
